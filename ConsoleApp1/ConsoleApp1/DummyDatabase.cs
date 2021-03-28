@@ -8,7 +8,7 @@ namespace ConsoleApp1
     {
         private bool IsConnected = false;
         private bool AttemptedConnectiion = false;
-        private List<string> words = new List<string>();
+        private readonly List<string> words = new List<string>();
 
         public DummyDatabase()
         {

@@ -4,9 +4,20 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            DummyDatabase dummyDatabase = new DummyDatabase();
+
+
+            //dummyDatabase.Disconnect();
+            dummyDatabase.Connect();
+            dummyDatabase.Save("something");
+
+            dummyDatabase.Disconnect();
+            dummyDatabase.Print();
+            Console.Read();
+
+
         }
     }
 }
